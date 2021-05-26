@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b984447a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+
+
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1 class="title"><i class="fas fa-book-open  blue "></i>The<span class="blue">Book</span>List</h1>
+            <button id="add" class="btn btn-primary">Add New Book</button>
+            <div id="form" class="form">
+                <form>
+
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages">
+                    <br>
+                    <label for="read">Read ?</label>
+                    <input type="checkbox" id="read">
+                    <br>
+                    <input id="submit" type="submit" value="Add">
+                </form>
+            </div>
+            <div>
+                <table class="w3-table-all w3-hoverable">
+                    <thead>
+                        <tr class="w3-light-grey">
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+i {
+    margin: 10px;
+}
+
+.title {
+    margin: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: Pattaya;
+    color: white;
+}
+
+.blue {
+    color: cornflowerblue;
+}
+
+#add {
+    background-color: #479ba8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+    font-style: italic;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+    color: blanchedalmond;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin: 10px;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #2a707a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: cornflowerblue;
+}
+
+table {
+    margin-top: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+table td {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    i {
+        margin: 2px;
+    }
+    .title {
+        margin: 5px;
+    }
+    #add {
+        padding: 10px 10px;
+        margin: 2px 0;
+    }
+    table {
+        margin-top: 10px;
+    }
+    table td {
+        font-size: 11px;
+        padding: 3px 3px;
+    }
+    .container {
+        width: 100%;
+    }
+    input[type=submit] {
+        padding: 14px 10px;
+    }
+}
